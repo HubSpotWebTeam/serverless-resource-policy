@@ -1,0 +1,22 @@
+{
+  "name": "serverless-resource-policy",
+  "version": "1.0.3",
+  "author": "HubSpot Web Team",
+  "description": "Creates a whitelist for IP or CIDR addresses for a serverless application, using serverless resource policies",
+  "keywords": [
+    "serverless",
+    "resource-policy",
+    "resourcepolicy",
+    "ip",
+    "cidr",
+    "whitelist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HubSpotWebTeam/serverless-resource-policy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HubSpotWebTeam/serverless-resource-policy/issues"
+  },
+  "license": "MIT"
+}
