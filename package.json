@@ -1,6 +1,6 @@
 {
   "name": "serverless-resource-policy",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "HubSpot Web Team",
   "description": "Creates a whitelist for IP or CIDR addresses for a serverless application, using serverless resource policies",
   "keywords": [
