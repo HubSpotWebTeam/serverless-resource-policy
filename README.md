@@ -1,6 +1,6 @@
 # Serverless Resource Policy
 
-Creates a whitelist for IP or CIDR addresses for a serverless application, using serverless resource policies. This enables you to allow requests only from the IP or CIDR addresses you specify.
+Creates a whitelist for IP or CIDR addresses accessing a serverless application, using serverless resource policies. This enables you to allow requests only from the IP or CIDR addresses you specify.
 
 ## Private and Public Stages
 
