@@ -13,34 +13,29 @@ CIDR and IP addresses are whitelisted by stages.
 
 1. Install in your serverless application: `npm install --save serverless-resource-policy`
 2. In your `serverless.yml` file, add the `serverless-resource-plugin`, for example:
-
-```
-plugins:
-- serverless-resource-policy
-```
-
+   ```
+   plugins:
+   - serverless-resource-policy
+   ```
 3. Within the `provider` block, add a `stage` variable:
-
-```
-provider:
-  stage: ${opt:stage, 'dev'}
-```
-
+   ```
+   provider:
+     stage: ${opt:stage, 'dev'}
+   ```
 4. Within a `custom` block, add:
-
-```
-custom:
-  serverless-resource-policy:
-    stage: ${self:provider.stage}
-    privateStages:
-      - dev
-      - staging
-    publicStages:
-      - production
-    netblocks:
-      - 123.45.67.890/30
-      - 987.65.432.109
-```
+   ```
+   custom:
+     serverless-resource-policy:
+       stage: ${self:provider.stage}
+       privateStages:
+         - dev
+         - staging
+       publicStages:
+         - production
+       netblocks:
+         - 123.45.67.890/30
+         - 987.65.432.109
+   ```
 
 > The `netblocks` object will contain the list of whitelisted IPs.
 
