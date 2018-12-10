@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "author": "HubSpot Web Team",
   "description": "Creates a whitelist for IP or CIDR addresses for a serverless application, using serverless resource policies",
+  "test": "echo 'Ordinarily, tests should be here' && exit 0",
   "keywords": [
     "serverless",
     "resource-policy",
