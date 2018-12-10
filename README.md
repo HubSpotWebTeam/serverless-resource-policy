@@ -1,3 +1,5 @@
+> **Warning:** _This package is in development. Please use [this package](https://www.npmjs.com/package/serverless-resource-policy) for now._
+
 # Serverless Resource Policy
 
 Creates a whitelist for IP or CIDR addresses accessing a serverless application, using serverless resource policies. This enables you to allow requests only from the IP or CIDR addresses you specify.
