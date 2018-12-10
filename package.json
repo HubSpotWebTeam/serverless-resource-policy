@@ -1,6 +1,6 @@
 {
   "name": "@hs-web-team/serverless-resource-policy",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "author": "HubSpot Web Team",
   "description": "Creates a whitelist for IP or CIDR addresses for a serverless application, using serverless resource policies",
   "test": "echo 'Ordinarily, tests should be here' && exit 0",
