@@ -1,0 +1,9 @@
+before_deploy: "echo 'Deploying new npm package'"
+deploy:
+  provider: npm
+  email: stephen@appstruct.io
+  api_key:
+    secure: ZPg5AfVhNXaK/j2jiSEEMbjm5+bzcX5RDYyabyyEA1B7VWOZC8/Tf7fkpKXTF1CoXA7EsElDOrHw6vcCBlmWCGmlmJMUS5KWgrLcGbYNFmaRG0VHkvGIe5RF8nTUjnvjeIZxYo5a0J12bvZZSa+2wc9Fbljfc0YPCBOc+Hte+wmbI4kCs4FpG4umAVoARgNq5bxH7Lo5eT5drKkLEteETDOZk5shX7AcCm3hQeoMsqvf9cm6vkCpEJTkpUZt6rQ7y/YCPQ6p7b2l7LqBtwdzWvZtC5/pNcncl1mdveslaHbzuRXu+ifcAKLE+NpqAQwLyNJU7qJXOEL/xer6Ui582mSQdk/Ne5RKHEIj5OWvCoB7HKuIH3Q2Nx0g7ifNEQUsLXF+4tjmBGjd352JXiK+s+rTjcNu+NuS/5bBedKUZ55jP+HgWgFxpqVVQCJ+vnDCBm9W4RTXdNiMq29h2Scsw3cEq3vQgynlZ1mDKuPwd7sqYsNozqMYE9JyKphnl6GPGkzXVr1RuaKSw4gZsm5on5a/V9bOHIS8hm7wdCqkvgmb/FksN5lmu9wE4E6xFyzfRH1afaF6kljwK3iao6FlQncaAIEG9Zyz6cYsf9rp1TENtAmAwXVJdrJZfntxKBLwVwnfS7CdEIaqBHXYCrJ75ICY3+b5irPbGFXlJh8gFX8=
+  on:
+    branch: release
+    repo: HubSpotWebTeam/serverless-resource-policy
