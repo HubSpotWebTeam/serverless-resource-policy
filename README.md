@@ -11,11 +11,11 @@ CIDR and IP addresses are whitelisted by stages.
 
 ## How to Use
 
-1. Install in your serverless application: `npm install --save serverless-resource-policy`
-2. In your `serverless.yml` file, add the `serverless-resource-plugin`, for example:
+1. Install in your serverless application: `npm install --save @hs-web-team/serverless-resource-policy`
+2. In your `serverless.yml` file, add the `@hs-web-team/serverless-resource-plugin`, for example:
    ```
    plugins:
-   - serverless-resource-policy
+   - @hs-web-team/serverless-resource-policy
    ```
 3. Within the `provider` block, add a `stage` variable:
    ```
@@ -25,7 +25,7 @@ CIDR and IP addresses are whitelisted by stages.
 4. Within a `custom` block, add:
    ```
    custom:
-     serverless-resource-policy:
+     @hs-web-team/serverless-resource-policy:
        stage: ${self:provider.stage}
        privateStages:
          - dev
@@ -47,13 +47,13 @@ CIDR and IP addresses are whitelisted by stages.
 service: my-service-name
 
 plugins:
-  - serverless-resource-policy
+  - @hs-web-team/serverless-resource-policy
 
 provider:
   stage: ${opt:stage, 'dev'}
 
 custom:
-  serverless-resource-policy:
+  @hs-web-team/serverless-resource-policy:
     stage: ${self:provider.stage}
     privateStages:
       - dev
